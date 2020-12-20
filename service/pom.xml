@@ -16,7 +16,8 @@
     </modules>
 
     <dependencies>
-        <!--引入service-base-->
+
+        <!--service-base-->
         <dependency>
             <groupId>com.mark</groupId>
             <artifactId>service-base</artifactId>
