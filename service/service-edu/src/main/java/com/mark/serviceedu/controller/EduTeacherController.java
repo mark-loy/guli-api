@@ -98,6 +98,8 @@ public class EduTeacherController {
         if (!StringUtils.isEmpty(begin)) {
             wrapper.le("gmt_create", end);
         }
+        // 按开始时间倒序排
+        wrapper.orderByDesc("gmt_create");
 
         // 执行
         teacherService.page(teacherPage, wrapper);

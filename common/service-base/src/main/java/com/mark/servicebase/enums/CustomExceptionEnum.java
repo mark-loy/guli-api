@@ -7,7 +7,8 @@ package com.mark.servicebase.enums;
  * @date 2020/12/20 12:12
  */
 public enum CustomExceptionEnum {
-    NOT_FOUND(404, "没有发现对象");
+    NOT_FOUND(20001, "没有发现对象"),
+    FILE_UPLOAD_ERROR(20002, "文件上传失败");
 
 
     private final Integer code;

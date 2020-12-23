@@ -1,0 +1,18 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: server-oss
+  profiles:
+    active: dev
+
+# OSS对象存储配置
+aliyun:
+  endpoint: oss-cn-beijing.aliyuncs.com
+  accessKeyId: LTAI4G11tNxSkgXFkfwuVPGE
+  accessKeySecret: ZzXjlj5A2OMzod3K51K9BPckA2A0S3
+  oss:
+    bucketName: marker-fileupload
+    filePatten: images/guli/edu/dev
+
