@@ -8,8 +8,8 @@ package com.mark.servicebase.enums;
  */
 public enum CustomExceptionEnum {
     NOT_FOUND(20001, "没有发现对象"),
-    FILE_UPLOAD_ERROR(20002, "文件上传失败");
-
+    FILE_UPLOAD_ERROR(20002, "文件上传失败"),
+    EXCEL_DATA_ERROR(20002, "excel数据解析失败");
 
     private final Integer code;
     private final String msg;
