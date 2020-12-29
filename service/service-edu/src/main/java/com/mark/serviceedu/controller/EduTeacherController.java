@@ -36,7 +36,7 @@ public class EduTeacherController {
 
     /**
      * 查询所有讲师
-     * @return
+     * @return Result.ok().data("teachers", list)
      */
     @ApiOperation(value = "查询所有讲师")
     @GetMapping("/all")

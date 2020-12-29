@@ -7,9 +7,12 @@ package com.mark.servicebase.enums;
  * @date 2020/12/20 12:12
  */
 public enum CustomExceptionEnum {
-    NOT_FOUND(20001, "没有发现对象"),
+    SELECT_DATA_ERROR(20001, "查询数据失败"),
     FILE_UPLOAD_ERROR(20002, "文件上传失败"),
-    EXCEL_DATA_ERROR(20002, "excel数据解析失败");
+    EXCEL_DATA_ERROR(20002, "excel数据解析失败"),
+    INSERT_DATA_ERROR(20003, "插入数据失败"),
+    UPDATE_DATA_ERROR(20004, "修改数据失败"),
+    DELETE_DATA_ERROR(20005, "删除数据失败");
 
     private final Integer code;
     private final String msg;

@@ -19,7 +19,7 @@ import org.junit.Test;
 public class CodeGenerator {
 
     @Test
-    public void main1() {
+    public void autoCode() {
         // 1、创建代码生成器
         AutoGenerator mpg = new AutoGenerator();
         // 2、全局配置
@@ -58,7 +58,7 @@ public class CodeGenerator {
         mpg.setPackageInfo(pc);
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("edu_subject");
+        strategy.setInclude("edu_course");
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);//数据库表字段映射到实体的命名策略

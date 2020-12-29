@@ -1,25 +1,33 @@
 package com.mark.commonutil.entity;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 统一结果返回实体类
  * @author 木可
  * @version 1.0
  * @date 2020/12/19 16:34
  */
+@ApiModel(value = "统一结果返回实体类")
 @Data
 public class Result {
 
+    @ApiModelProperty(value = "是否成功")
     private Boolean success;
 
+    @ApiModelProperty(value = "状态码")
     private Integer code;
 
+    @ApiModelProperty(value = "提示信息")
     private String message;
 
+    @ApiModelProperty(value = "返回数据")
     private Map<String, Object> data = new HashMap<String, Object>();
 
     private Result() {}

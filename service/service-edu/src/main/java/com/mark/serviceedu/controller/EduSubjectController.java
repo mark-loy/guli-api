@@ -22,7 +22,7 @@ import java.util.List;
  * @author mark
  * @since 2020-12-23
  */
-@Api(value = "课程管理", tags = {"课程服务接口"})
+@Api(value = "课程分类管理", tags = {"课程分类服务接口"})
 @RestController
 @RequestMapping("/service/edu/subject")
 public class EduSubjectController {
@@ -36,7 +36,7 @@ public class EduSubjectController {
      * @return Result.ok()
      */
     @ApiOperation(value = "添加课程分类")
-    @PostMapping("/classify/save")
+    @PostMapping("/save")
     public Result saveSubjectByExcel(@ApiParam("excel") @RequestParam("file")MultipartFile multipartFile) {
         subjectService.saveSubjectByExcel(multipartFile, subjectService);
         return Result.ok();
@@ -47,7 +47,7 @@ public class EduSubjectController {
      * @return Result.ok()
      */
     @ApiOperation(value = "查询课程分类")
-    @GetMapping("/classify/list")
+    @GetMapping("/list")
     public Result getSubjectClassify() {
         List<OneSubjectClassify> oneList =  subjectService.getSubjectByTree();
         return Result.ok().data("subjectClassify", oneList);
