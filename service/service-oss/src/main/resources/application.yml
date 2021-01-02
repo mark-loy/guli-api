@@ -6,6 +6,10 @@ spring:
     name: server-oss
   profiles:
     active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
 # OSS对象存储配置
 aliyun:
@@ -15,4 +19,6 @@ aliyun:
   oss:
     bucketName: marker-fileupload
     filePatten: images/guli/edu/dev
+
+
 

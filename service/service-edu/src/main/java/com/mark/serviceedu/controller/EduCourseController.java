@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mark.commonutil.entity.Result;
 import com.mark.servicebase.enums.CustomExceptionEnum;
 import com.mark.servicebase.exception.CustomException;
+import com.mark.serviceedu.client.VodClient;
 import com.mark.serviceedu.entity.EduCourse;
 import com.mark.serviceedu.entity.EduCourseDescription;
 import com.mark.serviceedu.entity.vo.CourseBasicVO;
@@ -16,6 +17,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

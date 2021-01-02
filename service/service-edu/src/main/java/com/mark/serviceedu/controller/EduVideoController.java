@@ -4,11 +4,13 @@ package com.mark.serviceedu.controller;
 import com.mark.commonutil.entity.Result;
 import com.mark.servicebase.enums.CustomExceptionEnum;
 import com.mark.servicebase.exception.CustomException;
+import com.mark.serviceedu.client.VodClient;
 import com.mark.serviceedu.entity.EduVideo;
 import com.mark.serviceedu.service.EduVideoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -28,6 +30,9 @@ public class EduVideoController {
 
     @Resource
     private EduVideoService videoService;
+
+    @Resource
+    private VodClient vodClient;
 
     /**
      * 保存课程小节
@@ -86,6 +91,21 @@ public class EduVideoController {
     @DeleteMapping("/{id}")
     public Result deleteVideo(@ApiParam(value = "小节id") @PathVariable("id") String id) {
 
+        // 根据小节id，查询视频id
+        EduVideo video = videoService.getById(id);
+        // 获取视频id
+        String videoSourceId = video.getVideoSourceId();
+        // 判断视频id
+        if (!StringUtils.isEmpty(videoSourceId)) {
+            // 存在视频id，删除视频
+            Result result = vodClient.deleteVideo(videoSourceId);
+            if (!result.getSuccess()) {
+                // 删除视频失败
+                throw new CustomException(result.getCode(), result.getMessage());
+            }
+        }
+
+        // 删除小节
         boolean isDelete = videoService.removeById(id);
         if (!isDelete) {
             throw new CustomException(CustomExceptionEnum.DELETE_DATA_ERROR);
