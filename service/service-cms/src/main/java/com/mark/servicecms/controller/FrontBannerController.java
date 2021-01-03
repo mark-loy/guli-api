@@ -33,10 +33,9 @@ public class FrontBannerController {
     @ApiOperation(value = "获取发布的banner图信息")
     @GetMapping("/banner/publish")
     public Result getBannerPublish() {
-        QueryWrapper<CrmBanner> queryWrapper = new QueryWrapper<>();
-        queryWrapper.orderByDesc("gmt_create");
-        queryWrapper.last("limit 2");
-        List<CrmBanner> banners = bannerService.list(queryWrapper);
+
+        List<CrmBanner> banners = bannerService.getBannerPublish();
+
         return Result.ok().data("banners", banners);
     }
 }

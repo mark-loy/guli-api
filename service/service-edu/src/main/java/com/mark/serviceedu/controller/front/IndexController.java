@@ -8,6 +8,7 @@ import com.mark.serviceedu.service.EduCourseService;
 import com.mark.serviceedu.service.EduTeacherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.bouncycastle.crypto.engines.TEAEngine;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,17 +39,10 @@ public class IndexController {
     @ApiOperation(value = "查询首页的热门课程和名师")
     @GetMapping("/all")
     public Result getCourseTeacher() {
-        // 查询前八条热门课程
-        QueryWrapper<EduCourse> courseWrapper = new QueryWrapper<>();
-        courseWrapper.orderByDesc("buy_count", "view_count", "gmt_create");
-        courseWrapper.last("limit 8");
-        List<EduCourse> courses = courseService.list(courseWrapper);
 
-        // 查询前四条名师
-        QueryWrapper<EduTeacher> teacherWrapper = new QueryWrapper<>();
-        teacherWrapper.orderByDesc( "gmt_create");
-        teacherWrapper.last("limit 4");
-        List<EduTeacher> teachers = teacherService.list(teacherWrapper);
+        List<EduCourse> courses = courseService.getHotCourse();
+
+        List<EduTeacher> teachers = teacherService.getHotTeacher();
 
         return Result.ok().data("courses", courses).data("teachers", teachers);
     }

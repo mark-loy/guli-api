@@ -7,6 +7,8 @@ import com.mark.serviceedu.entity.vo.CourseBasicVO;
 import com.mark.serviceedu.entity.vo.CoursePublishVo;
 import com.mark.serviceedu.entity.vo.PageCourseQuery;
 
+import java.util.List;
+
 /**
  * <p>
  * 课程 服务类
@@ -24,4 +26,7 @@ public interface EduCourseService extends IService<EduCourse> {
     void pageQuery(Page<EduCourse> coursePage, PageCourseQuery courseQuery);
 
     void deleteCourseRelated(String id);
+
+    List<EduCourse> getHotCourse();
+
 }

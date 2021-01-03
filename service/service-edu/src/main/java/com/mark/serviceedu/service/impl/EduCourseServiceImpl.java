@@ -18,10 +18,12 @@ import com.mark.serviceedu.service.EduCourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mark.serviceedu.service.EduVideoService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * <p>
@@ -133,6 +135,15 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         if (deleteById == 0) {
             throw new CustomException(CustomExceptionEnum.DELETE_DATA_ERROR);
         }
+    }
 
+    @Override
+    @Cacheable(value = "course", key = "'getHotCourse'")
+    public List<EduCourse> getHotCourse() {
+        // 查询前八条热门课程
+        QueryWrapper<EduCourse> courseWrapper = new QueryWrapper<>();
+        courseWrapper.orderByDesc("buy_count", "view_count", "gmt_create");
+        courseWrapper.last("limit 8");
+        return baseMapper.selectList(courseWrapper);
     }
 }
