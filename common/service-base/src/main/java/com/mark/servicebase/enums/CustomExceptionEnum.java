@@ -14,7 +14,14 @@ public enum CustomExceptionEnum {
     EXCEL_DATA_ERROR(20002, "excel数据解析失败"),
     INSERT_DATA_ERROR(20003, "插入数据失败"),
     UPDATE_DATA_ERROR(20004, "修改数据失败"),
-    DELETE_DATA_ERROR(20005, "删除数据失败");
+    DELETE_DATA_ERROR(20005, "删除数据失败"),
+    FORM_DATA_ERROR(20006, "表单数据错误"),
+    MOBILE_ERROR(20007, "账号错误"),
+    PASSWORD_ERROR(20008, "密码错误"),
+    CODE_TIMEOUT(20009, "验证码已过期"),
+    CODE_ERROR(20009, "验证码错误"),
+    USER_DISABLED(20010, "用户已禁用"),
+    USER_REGISTERED(20010, "用户已注册");
 
     private final Integer code;
     private final String msg;

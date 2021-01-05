@@ -29,4 +29,7 @@ public interface EduCourseService extends IService<EduCourse> {
 
     List<EduCourse> getHotCourse();
 
+    void updateCourseStatus(String id);
+
+    void updateCourse(CourseBasicVO courseBasicVO);
 }

@@ -16,4 +16,10 @@ import java.util.List;
 public interface EduTeacherService extends IService<EduTeacher> {
 
     List<EduTeacher> getHotTeacher();
+
+    void saveTeacher(EduTeacher eduTeacher);
+
+    void deleteTeacher(String id);
+
+    void updateTeacher(EduTeacher eduTeacher);
 }

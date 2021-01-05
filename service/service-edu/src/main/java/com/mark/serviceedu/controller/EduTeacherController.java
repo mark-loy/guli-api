@@ -12,6 +12,7 @@ import com.mark.serviceedu.service.EduTeacherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.bouncycastle.crypto.engines.TEAEngine;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -53,10 +54,7 @@ public class EduTeacherController {
     @ApiOperation(value = "逻辑删除讲师")
     @DeleteMapping("/delete/{id}")
     public Result deleteTeacher(@ApiParam(value = "讲师id", required = true) @PathVariable("id") String id) {
-        boolean isRemove = teacherService.removeById(id);
-        if (isRemove) {
-            return Result.ok();
-        }
+        teacherService.deleteTeacher(id);
         return Result.error();
     }
 
@@ -119,11 +117,8 @@ public class EduTeacherController {
     @ApiOperation(value = "添加讲师")
     @PostMapping("/add")
     public Result addTeacher(@ApiParam(name = "讲师对象") @RequestBody EduTeacher eduTeacher) {
-        boolean isSave = teacherService.save(eduTeacher);
-        if (isSave) {
-            return Result.ok();
-        }
-        return Result.error();
+        teacherService.saveTeacher(eduTeacher);
+        return Result.ok();
     }
 
     /**
@@ -146,11 +141,8 @@ public class EduTeacherController {
     @ApiOperation(value = "根据id修改讲师")
     @PutMapping("/update")
     public Result updateTeacher(@ApiParam(value = "讲师对象") @RequestBody EduTeacher eduTeacher) {
-        boolean isUpdate = teacherService.updateById(eduTeacher);
-        if (isUpdate) {
-            return Result.ok();
-        }
-        return Result.error();
+        teacherService.updateTeacher(eduTeacher);
+        return Result.ok();
     }
 }
 

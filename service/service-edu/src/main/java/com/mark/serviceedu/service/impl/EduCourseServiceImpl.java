@@ -18,6 +18,7 @@ import com.mark.serviceedu.service.EduCourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mark.serviceedu.service.EduVideoService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -47,6 +48,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
 
 
     @Override
+    @CacheEvict(value = "course", allEntries = true)
     public String saveCourseInfo(CourseBasicVO courseBasicVO) {
         // 向课程表中插入数据
         EduCourse eduCourse = new EduCourse();
@@ -109,6 +111,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     }
 
     @Override
+    @CacheEvict(value = "course", allEntries = true)
     public void deleteCourseRelated(String id) {
 
         // 删除小节
@@ -134,6 +137,30 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         int deleteById = baseMapper.deleteById(id);
         if (deleteById == 0) {
             throw new CustomException(CustomExceptionEnum.DELETE_DATA_ERROR);
+        }
+    }
+
+    @Override
+    @CacheEvict(value = "course", allEntries = true)
+    public void updateCourse(CourseBasicVO courseBasicVO) {
+        EduCourse eduCourse = new EduCourse();
+        BeanUtils.copyProperties(courseBasicVO, eduCourse);
+        int isUpdate = baseMapper.updateById(eduCourse);
+        if (isUpdate != 1) {
+            throw new CustomException(CustomExceptionEnum.UPDATE_DATA_ERROR);
+        }
+    }
+
+    @Override
+    @CacheEvict(value = "course", allEntries = true)
+    public void updateCourseStatus(String id) {
+        EduCourse course = new EduCourse();
+        course.setId(id);
+        // 设置课程状态
+        course.setStatus("Normal");
+        int isUpdate = baseMapper.updateById(course);
+        if (isUpdate != 1) {
+            throw new CustomException(CustomExceptionEnum.UPDATE_DATA_ERROR);
         }
     }
 

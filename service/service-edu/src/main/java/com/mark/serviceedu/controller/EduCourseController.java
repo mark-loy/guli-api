@@ -91,12 +91,7 @@ public class EduCourseController {
     @PutMapping("/update")
     public Result updateCourseById(@ApiParam(value = "课程信息表单") @RequestBody CourseBasicVO courseBasicVO) {
         // 修改课程信息
-        EduCourse eduCourse = new EduCourse();
-        BeanUtils.copyProperties(courseBasicVO, eduCourse);
-        boolean isCourseUpdate = courseService.updateById(eduCourse);
-        if (!isCourseUpdate) {
-            throw new CustomException(CustomExceptionEnum.UPDATE_DATA_ERROR);
-        }
+        courseService.updateCourse(courseBasicVO);
 
         // 修改课程描述信息
         EduCourseDescription eduCourseDescription = new EduCourseDescription();
@@ -132,14 +127,8 @@ public class EduCourseController {
     @PutMapping("/update/{id}")
     public Result updateCourseStatus(@ApiParam(value = "课程id") @PathVariable("id") String id) {
 
-        EduCourse course = new EduCourse();
-        course.setId(id);
-        // 设置课程状态
-        course.setStatus("Normal");
-        boolean isUpdate = courseService.updateById(course);
-        if (!isUpdate) {
-            throw new CustomException(CustomExceptionEnum.UPDATE_DATA_ERROR);
-        }
+        courseService.updateCourseStatus(id);
+
         return Result.ok();
     }
 

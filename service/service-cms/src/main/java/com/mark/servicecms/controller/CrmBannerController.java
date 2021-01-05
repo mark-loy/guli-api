@@ -64,11 +64,7 @@ public class CrmBannerController {
     @ApiOperation(value = "添加banner")
     @PostMapping("/banner/save")
     public Result saveBanner(@ApiParam(value = "banner实体") @RequestBody CrmBanner crmBanner) {
-
-        boolean save = bannerService.save(crmBanner);
-        if (!save) {
-            throw new CustomException(CustomExceptionEnum.INSERT_DATA_ERROR);
-        }
+        bannerService.saveBanner(crmBanner);
         return Result.ok();
     }
 
@@ -94,11 +90,7 @@ public class CrmBannerController {
     @ApiOperation(value = "修改banner")
     @PutMapping("/banner")
     public Result updateBanner(@ApiParam(value = "banner实体") @RequestBody CrmBanner crmBanner) {
-
-        boolean update = bannerService.updateById(crmBanner);
-        if (!update) {
-            throw new CustomException(CustomExceptionEnum.UPDATE_DATA_ERROR);
-        }
+        bannerService.updateBanner(crmBanner);
         return Result.ok();
     }
 
@@ -109,12 +101,7 @@ public class CrmBannerController {
      */
     @DeleteMapping("/banner/{id}")
     public Result deleteBanner(@PathVariable("id") String id) {
-
-        boolean delete = bannerService.removeById(id);
-        if (!delete) {
-            throw new CustomException(CustomExceptionEnum.DELETE_DATA_ERROR);
-        }
-
+        bannerService.deleteBannerById(id);
         return Result.ok();
     }
 

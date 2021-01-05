@@ -16,4 +16,10 @@ import java.util.List;
 public interface CrmBannerService extends IService<CrmBanner> {
 
     List<CrmBanner> getBannerPublish();
+
+    void saveBanner(CrmBanner crmBanner);
+
+    void updateBanner(CrmBanner crmBanner);
+
+    void deleteBannerById(String id);
 }
