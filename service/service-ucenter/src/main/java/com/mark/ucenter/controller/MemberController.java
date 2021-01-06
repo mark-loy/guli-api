@@ -29,7 +29,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Api(value = "用户管理", tags = {"用户中心服务接口"})
 @RestController
-@RequestMapping("/service/ucenter")
+@RequestMapping("/api/ucenter")
 public class MemberController {
 
     @Resource

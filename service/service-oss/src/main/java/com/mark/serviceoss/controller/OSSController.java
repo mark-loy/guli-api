@@ -20,7 +20,7 @@ import javax.annotation.Resource;
  */
 @Api(value = "对象存储管理", tags = {"对象存储服务接口"})
 @RestController
-@RequestMapping("/service/oss")
+@RequestMapping("/api/oss")
 public class OSSController {
 
     @Resource

@@ -21,7 +21,10 @@ public enum CustomExceptionEnum {
     CODE_TIMEOUT(20009, "验证码已过期"),
     CODE_ERROR(20009, "验证码错误"),
     USER_DISABLED(20010, "用户已禁用"),
-    USER_REGISTERED(20010, "用户已注册");
+    USER_REGISTERED(20010, "用户已注册"),
+    USER_AUTH_REJECT(200010, "用户授权失败"),
+    HTTP_RESULT_ERROR(20011, "http请求失败"),
+    UNAUTHORIZED_ACCESS_ERROR(20011, "非法访问");
 
     private final Integer code;
     private final String msg;

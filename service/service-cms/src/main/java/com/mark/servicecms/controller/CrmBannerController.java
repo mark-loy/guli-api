@@ -25,7 +25,7 @@ import javax.annotation.Resource;
  */
 @Api(value = "banner管理", tags = {"banner服务接口"})
 @RestController
-@RequestMapping("/service/cms")
+@RequestMapping("/api/cms")
 public class CrmBannerController {
 
     @Resource

@@ -23,7 +23,7 @@ import java.util.List;
  */
 @Api(value = "首页管理", tags = {"首页服务接口"})
 @RestController
-@RequestMapping("/service/edu/front/index")
+@RequestMapping("/api/edu/front/index")
 public class IndexController {
 
     @Resource

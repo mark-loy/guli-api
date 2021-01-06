@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Api(value = "视频管理", tags = {"视频服务接口"})
 @RestController
-@RequestMapping("/service/vod")
+@RequestMapping("/api/vod")
 @CrossOrigin
 public class VodController {
 

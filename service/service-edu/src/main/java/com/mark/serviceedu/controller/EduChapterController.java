@@ -28,7 +28,7 @@ import java.util.List;
  */
 @Api(value = "课程章节管理", tags = {"课程章节服务接口"})
 @RestController
-@RequestMapping("/service/edu/chapter")
+@RequestMapping("/api/edu/chapter")
 public class EduChapterController {
 
     @Resource

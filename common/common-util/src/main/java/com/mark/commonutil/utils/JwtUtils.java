@@ -99,4 +99,17 @@ public class JwtUtils {
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(APP_SECRET).parseClaimsJws(jwtToken);
         return claimsJws.getBody();
     }
+
+    /**
+     * 解析token
+     * @param token
+     * @return
+     */
+    public static Claims parseToken(String token) {
+        if(StringUtils.isEmpty(token)) {
+            return null;
+        }
+        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(APP_SECRET).parseClaimsJws(token);
+        return claimsJws.getBody();
+    }
 }

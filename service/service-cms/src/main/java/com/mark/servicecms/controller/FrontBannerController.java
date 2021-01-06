@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Api(value = "banner发布管理", tags = {"banner发布服务接口"})
 @RestController
-@RequestMapping("/service/cms")
+@RequestMapping("/api/cms")
 public class FrontBannerController {
 
     @Resource

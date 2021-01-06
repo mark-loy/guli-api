@@ -29,7 +29,7 @@ import java.util.List;
  */
 @Api(value = "讲师管理", tags = {"讲师服务接口"})
 @RestController
-@RequestMapping("/service/edu/teacher")
+@RequestMapping("/api/edu/teacher")
 public class EduTeacherController {
 
     @Resource

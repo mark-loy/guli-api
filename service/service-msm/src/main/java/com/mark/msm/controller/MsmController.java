@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Api(value = "短信服务", tags = {"短信服务接口"})
 @RestController
-@RequestMapping("/service/msm")
+@RequestMapping("/api/msm")
 public class MsmController {
 
     @Resource

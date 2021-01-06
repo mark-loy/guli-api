@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Api(value = "后台登录", tags = {"后台登录接口"})
 @RestController
-@RequestMapping("/service/edu/admin")
+@RequestMapping("/api/edu/admin")
 public class EduLoginController {
 
     /**

@@ -25,7 +25,7 @@ import javax.annotation.Resource;
  */
 @Api(value = "课程小节管理", tags = {"课程小节服务接口"})
 @RestController
-@RequestMapping("/service/edu/video")
+@RequestMapping("/api/edu/video")
 public class EduVideoController {
 
     @Resource
