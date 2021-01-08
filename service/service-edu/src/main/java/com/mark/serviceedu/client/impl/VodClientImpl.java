@@ -16,7 +16,7 @@ public class VodClientImpl implements VodClient {
 
     @Override
     public Result deleteVideo(String id) {
-        return Result.error().message("删除视频失败");
+        return Result.error().message("删除视频失败，视频id：" + id);
     }
 
 }

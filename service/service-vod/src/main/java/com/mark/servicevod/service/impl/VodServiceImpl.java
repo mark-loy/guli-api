@@ -7,6 +7,8 @@ import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoResponse;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
 import com.mark.servicebase.enums.CustomExceptionEnum;
 import com.mark.servicebase.exception.CustomException;
 import com.mark.servicevod.service.VodService;
@@ -69,8 +71,6 @@ public class VodServiceImpl implements VodService {
     public void deleteVideo(String id) throws ClientException {
         // 初始化client对象
         DefaultAcsClient client = InitVodClient.initVodClient(ConstantVodUtil.KEY, ConstantVodUtil.SECRET);
-        // 构造response
-        DeleteVideoResponse response = new DeleteVideoResponse();
         // 构造request
         DeleteVideoRequest request = new DeleteVideoRequest();
         // 设置视频id
@@ -79,4 +79,22 @@ public class VodServiceImpl implements VodService {
         client.getAcsResponse(request);
     }
 
+    @Override
+    public String getVideoAuth(String vid) {
+        try {
+            // 初始化client对象
+            DefaultAcsClient client = InitVodClient.initVodClient(ConstantVodUtil.KEY, ConstantVodUtil.SECRET);
+            // 构造凭证request
+            GetVideoPlayAuthRequest authRequest = new GetVideoPlayAuthRequest();
+            // 设置request
+            authRequest.setVideoId(vid);
+            // 上传request
+            GetVideoPlayAuthResponse acsResponse = client.getAcsResponse(authRequest);
+            // 获取视频播放凭证
+            return acsResponse.getPlayAuth();
+        } catch (ClientException e) {
+            log.error("视频初始化失败：" + e.getMessage());
+            throw new CustomException(CustomExceptionEnum.VIDEO_AUTH_CODE_ERROR);
+        }
+    }
 }

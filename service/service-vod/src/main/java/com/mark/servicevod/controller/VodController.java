@@ -72,4 +72,17 @@ public class VodController {
         vodService.deleteVideo(ids);
         return Result.ok();
     }
+
+    /**
+     * 获取视频的播放凭证
+     * @param vid 视频id
+     * @return Result
+     */
+    @ApiOperation("获取视频的播放凭证")
+    @GetMapping("/auth/{vid}")
+    public Result getVideoAuth(@ApiParam("视频id") @PathVariable("vid") String vid) {
+        // 获取视频播放凭证
+        String authCode = vodService.getVideoAuth(vid);
+        return Result.ok().data("authCode", authCode);
+    }
 }

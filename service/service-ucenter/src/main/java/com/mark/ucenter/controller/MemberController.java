@@ -1,6 +1,7 @@
 package com.mark.ucenter.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mark.commonutil.entity.Result;
 import com.mark.commonutil.utils.JwtUtils;
 import com.mark.ucenter.entity.Member;
@@ -90,6 +91,24 @@ public class MemberController {
         memberVo.setAvatar((String)claims.get("avatar"));
         memberVo.setSign((String)claims.get("sign"));
         return Result.ok().data("member", memberVo);
+    }
+
+    /**
+     * 判断用户是否存在
+     * @param id 用户id
+     * @return Result
+     */
+    @ApiOperation("判断用户是否存在")
+    @GetMapping("/exist/{id}")
+    public Result isExistMember(@ApiParam("用户id") @PathVariable("id") String id) {
+
+        QueryWrapper<Member> memberWrapper = new QueryWrapper<>();
+        memberWrapper.eq("id", id);
+        int count = memberService.count(memberWrapper);
+        if (count == 0) {
+            return Result.error().message("该用户不存在");
+        }
+        return Result.ok();
     }
 }
 

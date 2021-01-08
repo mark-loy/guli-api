@@ -11,6 +11,7 @@ public enum CustomExceptionEnum {
     FILE_UPLOAD_ERROR(20002, "文件上传失败"),
     VIDEO_UPLOAD_ERROR(20002, "视频上传失败"),
     VIDEO_DELETE_ERROR(20002, "视频删除失败"),
+    VIDEO_AUTH_CODE_ERROR(20002, "获取视频播放凭证失败"),
     EXCEL_DATA_ERROR(20002, "excel数据解析失败"),
     INSERT_DATA_ERROR(20003, "插入数据失败"),
     UPDATE_DATA_ERROR(20004, "修改数据失败"),

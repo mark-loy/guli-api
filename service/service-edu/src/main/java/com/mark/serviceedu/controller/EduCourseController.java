@@ -171,5 +171,6 @@ public class EduCourseController {
 
         return Result.ok();
     }
+
 }
 

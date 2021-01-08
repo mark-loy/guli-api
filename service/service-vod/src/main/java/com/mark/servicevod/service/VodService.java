@@ -14,4 +14,6 @@ public interface VodService {
     String upload(MultipartFile file) throws IOException;
 
     void deleteVideo(String id) throws ClientException;
+
+    String getVideoAuth(String vid);
 }
