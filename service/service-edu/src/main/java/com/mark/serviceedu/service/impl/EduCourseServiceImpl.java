@@ -11,6 +11,8 @@ import com.mark.serviceedu.entity.EduVideo;
 import com.mark.serviceedu.entity.vo.CourseBasicVO;
 import com.mark.serviceedu.entity.vo.CoursePublishVo;
 import com.mark.serviceedu.entity.vo.PageCourseQuery;
+import com.mark.serviceedu.entity.vo.front.CourseDetailVO;
+import com.mark.serviceedu.entity.vo.front.CourseQueryVO;
 import com.mark.serviceedu.mapper.EduCourseMapper;
 import com.mark.serviceedu.service.EduChapterService;
 import com.mark.serviceedu.service.EduCourseDescriptionService;
@@ -24,7 +26,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -172,5 +176,52 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         courseWrapper.orderByDesc("buy_count", "view_count", "gmt_create");
         courseWrapper.last("limit 8");
         return baseMapper.selectList(courseWrapper);
+    }
+
+    @Override
+    public Map<String, Object> getCoursePageQuery(Page<EduCourse> coursePage, CourseQueryVO courseQueryVO) {
+        // 构建条件查询对象
+        QueryWrapper<EduCourse> courseWrapper = new QueryWrapper<>();
+        // 判断查询条件非空
+        //     判断一级分类
+        if (!StringUtils.isEmpty(courseQueryVO.getSubjectParentId())) {
+            courseWrapper.eq("subject_parent_id", courseQueryVO.getSubjectParentId());
+            // 判断二级分类
+            if (!StringUtils.isEmpty(courseQueryVO.getSubjectId())) {
+                courseWrapper.eq("subject_id", courseQueryVO.getSubjectId());
+            }
+        }
+        //     判断关注度排序
+        if (!StringUtils.isEmpty(courseQueryVO.getBuyCountSort())) {
+            courseWrapper.orderByDesc("buy_count");
+        }
+        //     判断最新排序
+        if (!StringUtils.isEmpty(courseQueryVO.getGmtCreateSort())) {
+            courseWrapper.orderByDesc("gmt_create");
+        }
+        //     判断价格排序
+        if (!StringUtils.isEmpty(courseQueryVO.getPriceSort())) {
+            courseWrapper.orderByDesc("price");
+        }
+        // 执行分页查询
+        baseMapper.selectPage(coursePage, courseWrapper);
+
+        // 封装结果
+        Map<String, Object> map = new HashMap<>();
+        map.put("courses", coursePage.getRecords());
+        map.put("pages", coursePage.getPages());
+        map.put("current", coursePage.getCurrent());
+        map.put("size", coursePage.getSize());
+        map.put("total", coursePage.getTotal());
+        map.put("hasNext", coursePage.hasNext());
+        map.put("hasPrevious", coursePage.hasPrevious());
+
+
+        return map;
+    }
+
+    @Override
+    public CourseDetailVO getBaseCourseInfo(String id) {
+        return baseMapper.getBaseCourseInfo(id);
     }
 }

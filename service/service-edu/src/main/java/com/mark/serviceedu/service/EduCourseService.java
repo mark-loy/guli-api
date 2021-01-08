@@ -6,8 +6,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.mark.serviceedu.entity.vo.CourseBasicVO;
 import com.mark.serviceedu.entity.vo.CoursePublishVo;
 import com.mark.serviceedu.entity.vo.PageCourseQuery;
+import com.mark.serviceedu.entity.vo.front.CourseDetailVO;
+import com.mark.serviceedu.entity.vo.front.CourseQueryVO;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -32,4 +35,8 @@ public interface EduCourseService extends IService<EduCourse> {
     void updateCourseStatus(String id);
 
     void updateCourse(CourseBasicVO courseBasicVO);
+
+    Map<String, Object> getCoursePageQuery(Page<EduCourse> coursePage, CourseQueryVO courseQueryVO);
+
+    CourseDetailVO getBaseCourseInfo(String id);
 }

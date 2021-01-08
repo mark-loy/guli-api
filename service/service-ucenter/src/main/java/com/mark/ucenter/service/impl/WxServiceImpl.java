@@ -72,7 +72,7 @@ public class WxServiceImpl implements WxService {
         if (StringUtils.isEmpty(code)) {
             throw new CustomException(CustomExceptionEnum.USER_AUTH_REJECT);
         }
-
+        // TODO 从redis中获取state，与传入的state进行比较，思路：sessionId有跨域问题
 /*        Claims claims = JwtUtils.parseToken(token);
         String sessionId = (String) claims.get("sessionId");
         // 从redis中获取state
