@@ -4,6 +4,7 @@ package com.mark.ucenter.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mark.commonutil.entity.Result;
 import com.mark.commonutil.utils.JwtUtils;
+import com.mark.servicebase.vo.MemberOrderVO;
 import com.mark.ucenter.entity.Member;
 import com.mark.ucenter.entity.vo.LoginVo;
 import com.mark.ucenter.entity.vo.MemberVo;
@@ -109,6 +110,21 @@ public class MemberController {
             return Result.error().message("该用户不存在");
         }
         return Result.ok();
+    }
+
+    /**
+     * 提供者：获取订单中的用户信息
+     * @param uid 用户id
+     * @return MemberOrderVO
+     */
+    @ApiOperation("获取订单中的用户信息")
+    @GetMapping("/provider/{uid}")
+    public MemberOrderVO getMemberOrder(@ApiParam("用户id") @PathVariable("uid") String uid) {
+        // 获取用户信息
+        Member member = memberService.getById(uid);
+        MemberOrderVO memberOrderVO = new MemberOrderVO();
+        BeanUtils.copyProperties(member, memberOrderVO);
+        return memberOrderVO;
     }
 }
 

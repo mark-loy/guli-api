@@ -13,7 +13,7 @@ public enum CustomExceptionEnum {
     VIDEO_DELETE_ERROR(20002, "视频删除失败"),
     VIDEO_AUTH_CODE_ERROR(20002, "获取视频播放凭证失败"),
     EXCEL_DATA_ERROR(20002, "excel数据解析失败"),
-    INSERT_DATA_ERROR(20003, "插入数据失败"),
+    INSERT_DATA_ERROR(20003, "保存数据失败"),
     UPDATE_DATA_ERROR(20004, "修改数据失败"),
     DELETE_DATA_ERROR(20005, "删除数据失败"),
     FORM_DATA_ERROR(20006, "表单数据错误"),
@@ -24,8 +24,11 @@ public enum CustomExceptionEnum {
     USER_DISABLED(20010, "用户已禁用"),
     USER_REGISTERED(20010, "用户已注册"),
     USER_AUTH_REJECT(200010, "用户授权失败"),
+    USER_LOGIN_ERROR(20010, "用户未登录"),
     HTTP_RESULT_ERROR(20011, "http请求失败"),
-    UNAUTHORIZED_ACCESS_ERROR(20011, "非法访问");
+    UNAUTHORIZED_ACCESS_ERROR(20011, "非法访问"),
+    SAVE_ORDER_ERROR(20012, "保存订单失败"),
+    PAY_CODE_ERROR(20013, "获取支付二维码失败");
 
     private final Integer code;
     private final String msg;

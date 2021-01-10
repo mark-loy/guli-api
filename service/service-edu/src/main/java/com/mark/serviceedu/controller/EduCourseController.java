@@ -5,12 +5,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mark.commonutil.entity.Result;
 import com.mark.servicebase.enums.CustomExceptionEnum;
 import com.mark.servicebase.exception.CustomException;
+import com.mark.servicebase.vo.CourseOrderVO;
 import com.mark.serviceedu.client.VodClient;
 import com.mark.serviceedu.entity.EduCourse;
 import com.mark.serviceedu.entity.EduCourseDescription;
 import com.mark.serviceedu.entity.vo.CourseBasicVO;
 import com.mark.serviceedu.entity.vo.CoursePublishVo;
 import com.mark.serviceedu.entity.vo.PageCourseQuery;
+import com.mark.serviceedu.entity.vo.front.CourseDetailVO;
 import com.mark.serviceedu.service.EduCourseDescriptionService;
 import com.mark.serviceedu.service.EduCourseService;
 import io.swagger.annotations.Api;
@@ -172,5 +174,19 @@ public class EduCourseController {
         return Result.ok();
     }
 
+    /**
+     * 生产者：获取订单中的课程信息
+     * @param cid 课程id
+     * @return CourseOrderVO
+     */
+    @ApiOperation(value = "获取订单中的课程信息")
+    @GetMapping("/provider/{cid}")
+    public CourseOrderVO getCourseOrderById(@ApiParam("课程cid") @PathVariable("cid") String cid) {
+        // 获取课程详情信息
+        CourseDetailVO course = courseService.getBaseCourseInfo(cid);
+        CourseOrderVO courseOrderVO = new CourseOrderVO();
+        BeanUtils.copyProperties(course, courseOrderVO);
+        return courseOrderVO;
+    }
 }
 
