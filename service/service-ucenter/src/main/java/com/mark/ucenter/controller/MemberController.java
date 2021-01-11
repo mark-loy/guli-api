@@ -126,5 +126,19 @@ public class MemberController {
         BeanUtils.copyProperties(member, memberOrderVO);
         return memberOrderVO;
     }
+
+    /**
+     * 提供者：获取某天的注册人数
+     * @param date 日期
+     * @return Result
+     */
+    @ApiOperation("获取某天的注册人数")
+    @GetMapping("/provider/register/{date}")
+    public Result getMemberRegister(@ApiParam("日期") @PathVariable("date") String date) {
+
+        Integer count = memberService.getRegister(date);
+
+        return Result.ok().data("count", count);
+    }
 }
 

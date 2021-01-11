@@ -127,4 +127,9 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
             throw new CustomException(CustomExceptionEnum.INSERT_DATA_ERROR);
         }
     }
+
+    @Override
+    public Integer getRegister(String date) {
+        return baseMapper.getRegister(date);
+    }
 }

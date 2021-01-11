@@ -18,4 +18,6 @@ public interface MemberService extends IService<Member> {
     String toLogin(LoginVo loginVo);
 
     void toRegister(RegisteredVo registeredVo);
+
+    Integer getRegister(String date);
 }
