@@ -9,6 +9,8 @@
     <modules>
         <module>service</module>
         <module>common</module>
+        <module>canal-client</module>
+        <module>infrastructure</module>
     </modules>
     <name>guli-parent</name>
     <description>Demo project for Spring Boot</description>

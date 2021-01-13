@@ -1,0 +1,34 @@
+server:
+  port: 888
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          # 开启服务发现路由
+          enabled: true
+          # 开启服务路由名小写
+          lower-case-service-id: true
+      # 路由设置
+      routes:
+        # 设置路由id
+        - id: service-edu
+        # 设置路由uri
+          uri: lb://service-edu
+        # 设置路由断言
+          predicates:
+            - Path=/api/edu/**
+        - id: service-ucenter
+          uri: lb://service-ucenter
+          predicates:
+            - Path=/api/ucenter/**
+        - id: service-cms
+          uri: lb://service-cms
+          predicates:
+            - Path=/api/cms/**
