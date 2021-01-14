@@ -19,9 +19,7 @@ import org.springframework.web.reactive.result.view.ViewResolver;
 
 /**
  * 覆盖默认的异常处理
- *
  * @author yinjihuan
- *
  */
 @Configuration
 @EnableConfigurationProperties({ServerProperties.class, ResourceProperties.class})

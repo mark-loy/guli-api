@@ -20,6 +20,8 @@
         <module>service-ucenter</module>
         <module>service-order</module>
         <module>service-sta</module>
+        <module>service-acl</module>
+        <module>service-acl</module>
     </modules>
 
     <dependencies>
@@ -51,6 +53,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--mybatis-plus-->
         <dependency>
