@@ -289,6 +289,9 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     //=========================给角色分配菜单=======================
     @Override
     public void saveRolePermissionRealtionShipGuli(String roleId, String[] permissionIds) {
+        // 先删除该角色原有的权限信息
+        rolePermissionService.remove(new QueryWrapper<RolePermission>().eq("role_id", roleId));
+
         //roleId角色id
         //permissionId菜单id 数组形式
         //1 创建list集合，用于封装添加数据
@@ -396,9 +399,10 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
      */
     @Override
     public void roleAllocationAuthority(String rid, String[] aid) {
+        // 移除角色原有的权限
+        rolePermissionService.remove(new QueryWrapper<RolePermission>().eq("role_id", rid));
         // 构建角色权限集合
         List<RolePermission> rolePermissions = new ArrayList<>();
-
         // 遍历权限id数组
         for (String pid : aid) {
             // 构建角色权限对象
@@ -410,7 +414,6 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
             // 封装到集合中
             rolePermissions.add(rolePermission);
         }
-
         // 执行添加
         rolePermissionService.saveBatch(rolePermissions);
     }

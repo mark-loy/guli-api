@@ -19,13 +19,13 @@ import java.util.Map;
  */
 @Api(value = "登录管理", tags = {"用户登录服务接口"})
 @RestController
-@RequestMapping("/api/acl/index")
+@RequestMapping("/admin/acl")
 public class IndexController {
 
     @Resource
     private IndexService indexService;
 
-    @GetMapping("/info")
+    @GetMapping("/index/info")
     public Result info(){
         //获取当前登录用户用户名
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
@@ -33,17 +33,12 @@ public class IndexController {
         return Result.ok().data(userInfo);
     }
 
-    @GetMapping("/menu")
+    @GetMapping("/index/menu")
     public Result getMenu(){
         //获取当前登录用户用户名
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
         List<JSONObject> permissionList = indexService.getMenu(username);
         return Result.ok().data("permissionList", permissionList);
-    }
-
-    @PostMapping("/logout")
-    public Result logout(){
-        return Result.ok();
     }
 
 }

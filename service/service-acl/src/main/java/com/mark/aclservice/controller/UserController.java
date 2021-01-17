@@ -29,7 +29,7 @@ import java.util.Map;
  */
 @Api(value = "用户管理", tags = {"用户服务接口"})
 @RestController
-@RequestMapping("/api/acl/user")
+@RequestMapping("/admin/acl/user")
 public class UserController {
 
     @Resource

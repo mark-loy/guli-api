@@ -32,3 +32,7 @@ spring:
           uri: lb://service-cms
           predicates:
             - Path=/api/cms/**
+        - id: service-acl
+          uri: lb://service-acl
+          predicates:
+            - Path=/**/acl/**

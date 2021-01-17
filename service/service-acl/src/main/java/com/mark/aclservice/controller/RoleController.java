@@ -25,7 +25,7 @@ import java.util.List;
  */
 @Api(value = "角色管理", tags = {"角色服务接口"})
 @RestController
-@RequestMapping("/api/acl/role")
+@RequestMapping("/admin/acl/role")
 public class RoleController {
 
     @Resource

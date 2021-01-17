@@ -33,14 +33,18 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         // 判断用户是否存在
         if (null == user){
-            //throw new UsernameNotFoundException("用户名不存在！");
+            throw new UsernameNotFoundException("用户名不存在！");
         }
         // 返回UserDetails实现类
         com.mark.security.entity.User curUser = new com.mark.security.entity.User();
         BeanUtils.copyProperties(user,curUser);
 
-        List<String> authorities = permissionService.selectPermissionValueByUserId(user.getId());
+        // 构建security的用户实体
         SecurityUser securityUser = new SecurityUser(curUser);
+
+        // 查询用户的权限列表
+        List<String> authorities = permissionService.selectPermissionValueByUserId(user.getId());
+        // 设置权限列表
         securityUser.setPermissionValueList(authorities);
         return securityUser;
     }

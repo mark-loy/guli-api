@@ -23,7 +23,7 @@ import java.util.List;
  */
 @Api(value = "菜单管理", tags = {"菜单服务接口"})
 @RestController
-@RequestMapping("/api/acl/permission")
+@RequestMapping("/admin/acl/permission")
 public class PermissionController {
 
     @Resource
