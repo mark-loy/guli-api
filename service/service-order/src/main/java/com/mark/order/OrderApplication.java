@@ -14,7 +14,6 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.mark"})
-@MapperScan("com.mark.order.mapper")
 @EnableDiscoveryClient
 @EnableFeignClients
 public class OrderApplication {

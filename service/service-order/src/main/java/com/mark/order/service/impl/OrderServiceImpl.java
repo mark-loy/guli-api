@@ -2,11 +2,13 @@ package com.mark.order.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.github.wxpay.sdk.WXPayUtil;
 import com.mark.commonutil.utils.JwtUtils;
 import com.mark.order.client.CourseClient;
 import com.mark.order.client.MemberClient;
 import com.mark.order.entity.Order;
+import com.mark.order.entity.vo.OrderQueryVO;
 import com.mark.order.mapper.OrderMapper;
 import com.mark.order.service.OrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -166,5 +168,31 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
             log.error("请求支付二维码异常：" + e.getMessage());
             throw new CustomException(CustomExceptionEnum.PAY_CODE_ERROR);
         }
+    }
+
+    @Override
+    public void getOrderPage(Page<Order> orderPage, OrderQueryVO orderQuery) {
+        // 构建条件查询对象
+        QueryWrapper<Order> orderWrapper = new QueryWrapper<>();
+        // 按创建订单时间降序排列
+        orderWrapper.orderByDesc("gmt_create");
+        // 验证条件非空
+        if (!StringUtils.isEmpty(orderQuery.getOrderNo())) {
+            orderWrapper.eq("order_no", orderQuery.getOrderNo());
+        }
+        if (!StringUtils.isEmpty(orderQuery.getOrderNo())) {
+            orderWrapper.like("course_title", orderQuery.getCourseTitle());
+        }
+        if (!StringUtils.isEmpty(orderQuery.getBegin())) {
+            orderWrapper.ge("gmt_create", orderQuery.getBegin());
+        }
+        if (!StringUtils.isEmpty(orderQuery.getEnd())) {
+            orderWrapper.le("gmt_create", orderQuery.getEnd());
+        }
+        if (!StringUtils.isEmpty(orderQuery.getStatus())) {
+            orderWrapper.eq("status", orderQuery.getStatus());
+        }
+        // 执行分页
+        baseMapper.selectPage(orderPage, orderWrapper);
     }
 }

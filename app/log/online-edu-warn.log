@@ -1,236 +1,55 @@
-2021-01-13 11:10:00.590 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 11:10:00.598 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 11:47:17.035 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s597ms900µs400ns).
-2021-01-13 11:51:27.670 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 11:51:27.673 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 12:47:26.700 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s900ms1µs100ns).
-2021-01-13 15:18:40.934 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m43s933ms665µs900ns).
-2021-01-13 16:57:29.294 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m48s259ms961µs100ns).
-2021-01-13 18:37:50.407 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m51s6ms622µs800ns).
-2021-01-13 19:02:41.325 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 19:02:41.808 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 19:03:17.810 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40api-gateway conflict;retry time: 1
-2021-01-13 19:03:28.185 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40api-gateway conflict;retry time: 1
-2021-01-13 19:07:28.534 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 19:07:28.812 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 19:07:29.270 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 19:07:31.325 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:03:17.529 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:03:18.130 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:03:20.226 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:06:33.716 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:06:33.948 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:06:34.321 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:06:36.072 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:06:36.072 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:20:34.565 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:20:36.755 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:20:36.755 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:21:40.621 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:21:41.138 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:21:41.585 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:21:43.394 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:21:43.394 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:21:43.394 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:21:43.415 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:21:43.415 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:21:43.446 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 3
-2021-01-13 21:22:41.334 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:41.334 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:41.334 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:41.334 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:41.334 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:41.354 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:41.354 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:41.355 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:44.628 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:44.628 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:44.628 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:44.628 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:44.628 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:44.649 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:44.649 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:44.649 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:44.649 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:44.680 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:22:44.680 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:22:44.722 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:22:46.752 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:46.752 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:46.752 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:46.752 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:46.752 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:46.773 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:46.773 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:46.773 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:46.773 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:46.804 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:22:46.804 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:22:49.290 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:49.290 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:49.290 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:49.290 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:22:49.310 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:22:49.310 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:16.272 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:16.272 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:16.272 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:16.272 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:16.292 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:16.294 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:16.294 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:16.312 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:16.644 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:26:17.042 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eduCourseController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.mark.serviceedu.controller.EduCourseController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1c1c4e0c]
-2021-01-13 21:26:18.983 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:18.983 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:18.983 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:18.983 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:19.004 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:19.004 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:19.004 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:19.035 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:26:19.035 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:26:19.076 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:26:22.540 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:26:23.186 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:26:24.791 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:24.791 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:24.791 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:24.791 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:26:24.813 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:24.813 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:24.813 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:26:24.844 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:26:24.844 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:26:24.885 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:26:25.167 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:25.167 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:25.167 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:25.167 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:25.167 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:26:25.188 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:26:25.188 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:26:25.188 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:26:25.188 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:26:25.219 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 3
-2021-01-13 21:26:25.219 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 3
-2021-01-13 21:26:25.219 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 3
-2021-01-13 21:26:25.260 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 4
-2021-01-13 21:27:30.971 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
-2021-01-13 21:27:31.046 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:27:31.121 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:27:31.228 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
-2021-01-13 21:27:33.620 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
-2021-01-13 21:27:33.850 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:27:34.136 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:27:34.411 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.498 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:36.520 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:36.520 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:36.520 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:36.521 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:36.551 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:27:36.551 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:27:36.592 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:27:39.569 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:27:39.639 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:39.637 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:39.637 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:39.637 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:39.639 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:39.669 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:39.669 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:39.669 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:27:39.700 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:27:40.373 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:27:42.625 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:27:42.625 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:27:42.625 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:27:42.625 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:27:42.625 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 1
-2021-01-13 21:27:42.646 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:27:42.646 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-edu conflict;retry time: 2
-2021-01-13 21:27:43.264 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:43.264 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:43.265 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:27:43.286 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:28:29.215 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:28:29.215 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:28:29.215 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:28:29.215 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:28:29.215 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:28:29.236 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:28:29.236 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:28:29.236 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:28:29.236 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:28:29.267 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:28:29.267 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:28:29.267 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:28:29.308 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:28:29.308 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.453 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:22.474 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:22.474 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:22.474 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:22.474 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:22.505 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:29:22.505 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:29:22.546 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:29:51.652 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
-2021-01-13 21:29:51.749 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:29:51.848 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:29:52.009 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
-2021-01-13 21:29:54.021 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:54.021 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:54.021 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:54.021 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:54.053 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:29:54.053 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:29:54.094 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 4
-2021-01-13 21:29:54.431 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
-2021-01-13 21:29:54.579 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-13 21:29:54.824 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-13 21:29:55.032 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.150 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
-2021-01-13 21:29:56.171 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:56.171 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:56.171 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:56.171 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:56.171 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 2
-2021-01-13 21:29:56.202 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-13 21:29:56.203 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 3
-2021-01-14 11:02:53.164 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
-2021-01-14 11:02:53.208 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-01-14 11:02:53.932 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-14 11:02:55.361 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
-2021-01-14 11:02:55.717 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-14 11:34:32.292 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
-2021-01-14 11:34:32.914 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
-2021-01-14 11:34:33.110 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-15 20:43:50.369 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
-2021-01-15 20:43:50.400 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-01-15 20:43:51.131 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-15 20:43:53.138 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
-2021-01-15 20:43:53.494 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-16 20:31:10.162 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
-2021-01-16 20:31:10.194 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-01-16 20:31:11.004 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-01-16 20:31:12.757 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
-2021-01-16 20:31:13.143 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 00:11:26.573 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.166.128:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2021-01-20 09:32:32.581 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.166.128:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2021-01-20 09:32:41.898 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h21m47s475ms284µs400ns).
+2021-01-20 09:32:42.648 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.166.128:6379]: connection timed out: /192.168.166.128:6379
+2021-01-20 12:35:17.709 [lettuce-nioEventLoop-4-6] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.166.128:6379]: connection timed out: /192.168.166.128:6379
+2021-01-20 14:36:43.654 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2021-01-20 14:36:45.420 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 14:36:49.303 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-acl conflict;retry time: 1
+2021-01-20 14:39:07.511 [com.alibaba.nacos.client.naming.updater] WARN  com.alibaba.nacos.client.naming - out of date data received, old-t: 1611124737507, new-t: 0
+2021-01-20 14:39:14.696 [com.alibaba.nacos.client.naming.updater] WARN  com.alibaba.nacos.client.naming - out of date data received, old-t: 1611124744693, new-t: 0
+2021-01-20 15:52:33.723 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 15:52:36.711 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 15:52:37.234 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 15:55:21.476 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 15:58:26.077 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 15:58:28.134 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:08:57.770 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:08:59.809 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:09:25.727 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:09:27.728 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:10:51.944 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-oss conflict;retry time: 1
+2021-01-20 16:25:46.826 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:25:49.435 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:28:37.243 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:28:39.623 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:34:05.278 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:34:08.340 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:35:07.990 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:37:56.866 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:38:13.696 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:38:43.125 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:39:47.312 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:44:16.525 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:44:18.896 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:44:20.010 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:44:28.530 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:46:17.572 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:46:19.871 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:56:42.840 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 16:56:45.151 [com.alibaba.nacos.naming.push.receiver] WARN  com.alibaba.nacos.client.naming - write DEFAULT_GROUP%40%40service-cms conflict;retry time: 1
+2021-01-20 18:41:10.945 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2021-01-20 18:41:11.388 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 18:41:11.391 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 18:45:27.538 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
+2021-01-20 18:45:27.730 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2021-01-20 18:45:27.880 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 18:45:28.053 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
+2021-01-20 18:45:32.382 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.mark.serviceedu]' package. Please check your configuration.
+2021-01-20 18:45:32.796 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2021-01-20 18:45:33.323 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-01-20 18:45:33.480 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2021-01-20 18:45:33.689 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\project\Idea Project\项目\guli-parent\service\service-edu\target\classes\com\mark\serviceedu\mapper\xml\EduCourseMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mark.serviceedu.entity.vo.CoursePublishVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mark.serviceedu.entity.vo.CoursePublishVo
+2021-01-20 18:45:38.184 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2021-01-20 18:45:38.569 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2021-01-20 18:45:38.724 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
